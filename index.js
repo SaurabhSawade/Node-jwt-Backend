@@ -7,7 +7,7 @@ const authenticate = require('./middleware/auth');
 
 const app = express();
 
-app.use(cors({ origin: 'node-jwt-frontend-ku6iytt6x-saurabhsawades-projects.vercel.app', credentials: true }));
+app.use(cors({ origin: 'https://node-jwt-frontend.vercel.app', credentials: true }));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
